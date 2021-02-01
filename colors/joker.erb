@@ -78,12 +78,13 @@
     cyan        = ["#00ffff", 14, "cyan"]
     white       = ["#d7d4cd", 15, "white"]
     jbrown      = ["#FA3B17", 136, "jbrown"]
+    jred        = ["#ff0000", 196, "jred"]
     jgreen      = ["#58FF1E", 46, "jgreen"]
-    jdarkgreen  = ["#96C93C", 2, "jdarkgreen"]
-    jpurple     = ["#bd93f9", 13, "jpurple"]
-    jdarkpurple = ["#191202", 235, "jdarkpurple"]
-    jorange     = ["#FF8B00", 214, "jorange"]
-    jyellow     = ["#FFD21C", 11, "jyellow"]
+    jdarkgreen  = ["#5f875f", 65, "jdarkgreen"]
+    jpurple     = ["#bd93f9", 98, "jpurple"]
+    jdarkpurple = ["#191202", 233, "jdarkpurple"]
+    jorange     = ["#FF8B00", 208, "jorange"]
+    jyellow     = ["#ffff00", 226, "jyellow"]
 
     # Step 4: highlights
     #
@@ -130,15 +131,15 @@
         [ "EndOfBuffer","NonText" ],
         [ "Comment", jdarkpurple, jdarkgreen, "NONE" ],
         [ "Constant", jdarkpurple, jorange, "NONE" ],
-        [ "Error", jdarkpurple, red, "NONE" ],
+        [ "Error", jdarkpurple, jred, "NONE" ],
         [ "Identifier", jdarkpurple, jpurple, "NONE" ],
         [ "Ignore", jdarkpurple, white, "NONE" ],
-        [ "PreProc", jdarkpurple, red, "NONE" ],
+        [ "PreProc", jdarkpurple, jred, "NONE" ],
         [ "Special", jdarkpurple, jgreen, "NONE" ],
         [ "Statement", jdarkpurple, jgreen, "NONE" ],
         [ "String", jdarkpurple, jyellow, "NONE" ],
         [ "Number", "Constant" ],
-        [ "Todo", red, jdarkpurple, "NONE" ],
+        [ "Todo", jred, jdarkpurple, "NONE" ],
         [ "Type", jdarkpurple, jgreen, "NONE" ],
         [ "Underlined", jdarkpurple, jgreen, "NONE" ],
         [ "StatusLine", jdarkpurple, jpurple, "NONE" ],
@@ -149,7 +150,7 @@
         [ "TabLine", jdarkpurple, jpurple, "NONE" ],
         [ "TabLineFill", jdarkpurple, white, "NONE" ],
         [ "TabLineSel", jpurple, jdarkpurple, "NONE" ],
-        [ "Title", jdarkpurple, red, "NONE" ],
+        [ "Title", jpurple, jdarkpurple, "NONE" ],
         [ "CursorLine", jdarkpurple, white, "NONE" ],
         [ "LineNr", jdarkpurple, jpurple, "NONE" ],
         [ "CursorLineNr", jdarkpurple, jgreen, "NONE" ],
@@ -167,19 +168,19 @@
         [ "SpecialKey", jdarkpurple, white, "NONE" ],
         [ "DiffAdd", jgreen, jdarkpurple, "NONE" ],
         [ "DiffChange", jorange, jdarkpurple, "NONE" ],
-        [ "DiffDelete", red, white, "NONE" ],
+        [ "DiffDelete", jred, white, "NONE" ],
         [ "DiffText", jdarkpurple, white, "NONE" ],
-        [ "IncSearch", jdarkpurple, white, "NONE" ],
+        [ "IncSearch", jgreen, black, "NONE" ],
         [ "Search", jpurple, jdarkpurple, "NONE" ],
-        [ "Directory", jdarkpurple, red, "NONE" ],
+        [ "Directory", jdarkpurple, jpurple, "NONE" ],
         [ "MatchParen", jdarkpurple, white, "NONE" ],
-        [ "SpellBad", jdarkpurple, white, "NONE", red ],
+        [ "SpellBad", jdarkpurple, white, "NONE", jred ],
         [ "SpellCap", jdarkpurple, white, "NONE", blue ],
         [ "SpellLocal", jdarkpurple, white, "NONE", magenta ],
         [ "SpellRare", jdarkpurple, white, "NONE", cyan ],
         [ "ColorColumn", jdarkpurple, white, "NONE" ],
         [ "SignColumn", jdarkpurple, white, "NONE" ],
-        [ "ErrorMsg", jdarkpurple, red, "NONE" ],
+        [ "ErrorMsg", jdarkpurple, jred, "NONE" ],
         [ "ModeMsg", jpurple, jdarkpurple, "NONE" ],
         [ "MoreMsg", jdarkpurple, white, "NONE" ],
         [ "Question", jdarkpurple, white, "NONE" ],
@@ -192,8 +193,8 @@
         [ "Conceal", jdarkpurple, white, "NONE" ],
         [ "ToolbarLine", jdarkpurple, white, "NONE" ],
         [ "ToolbarButton", jdarkpurple, white, "NONE" ],
-        [ "debugPC", jdarkpurple, red, "NONE" ],
-        [ "debugBreakpoint", jdarkpurple, red, "NONE" ],
+        [ "debugPC", jdarkpurple, jred, "NONE" ],
+        [ "debugBreakpoint", jdarkpurple, jred, "NONE" ],
     ]
 
     # Define the color palette used by :terminal when in GUI Vim
@@ -246,6 +247,7 @@
         magenta,
         cyan,
         white,
+        jred,
         jbrown,
         jgreen,
         jdarkgreen,
