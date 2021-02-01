@@ -77,14 +77,13 @@
     magenta     = ["#ff00ff", 13, "magenta"]
     cyan        = ["#00ffff", 14, "cyan"]
     white       = ["#d7d4cd", 15, "white"]
-
-    jbrown        = ["#FA3B17", 136, "jbrown"]
-    jgreen        = ["#58FF1E", 46, "jgreen"]
-    jdarkgreen    = ["#96C93C", 2, "jdarkgreen"]
-    jpurple       = ["#bd93f9", 13, "jpurple"]
-    jdarkpurple   = ["#191202", 235, "jdarkpurple"]
-    jorange       = ["#FF8B00", 214, "jorange"]
-    jyellow       = ["#FFD21C", 11, "jyellow"]
+    jbrown      = ["#FA3B17", 136, "jbrown"]
+    jgreen      = ["#58FF1E", 46, "jgreen"]
+    jdarkgreen  = ["#96C93C", 2, "jdarkgreen"]
+    jpurple     = ["#bd93f9", 13, "jpurple"]
+    jdarkpurple = ["#191202", 235, "jdarkpurple"]
+    jorange     = ["#FF8B00", 214, "jorange"]
+    jyellow     = ["#FFD21C", 11, "jyellow"]
 
     # Step 4: highlights
     #
@@ -139,7 +138,7 @@
         [ "Statement", jdarkpurple, jgreen, "NONE" ],
         [ "String", jdarkpurple, jyellow, "NONE" ],
         [ "Number", "Constant" ],
-        [ "Todo", jorange, jdarkpurple, "NONE" ],
+        [ "Todo", red, jdarkpurple, "NONE" ],
         [ "Type", jdarkpurple, jgreen, "NONE" ],
         [ "Underlined", jdarkpurple, jgreen, "NONE" ],
         [ "StatusLine", jdarkpurple, jpurple, "NONE" ],
@@ -147,17 +146,17 @@
         [ "StatusLineTerm", "StatusLine" ],
         [ "StatusLineTermNC", "StatusLineNC" ],
         [ "VertSplit", jdarkpurple, white, "NONE" ],
-        [ "TabLine", jdarkpurple, jgreen, "NONE" ],
+        [ "TabLine", jdarkpurple, jpurple, "NONE" ],
         [ "TabLineFill", jdarkpurple, white, "NONE" ],
-        [ "TabLineSel", jdarkpurple, white, "NONE" ],
-        [ "Title", jdarkpurple, jorange, "NONE" ],
+        [ "TabLineSel", jpurple, jdarkpurple, "NONE" ],
+        [ "Title", jdarkpurple, red, "NONE" ],
         [ "CursorLine", jdarkpurple, white, "NONE" ],
         [ "LineNr", jdarkpurple, jpurple, "NONE" ],
-        [ "CursorLineNr", jdarkpurple, jyellow, "NONE" ],
+        [ "CursorLineNr", jdarkpurple, jgreen, "NONE" ],
         [ "helpLeadBlank", jdarkpurple, white, "NONE" ],
         [ "helpNormal", jdarkpurple, jgreen, "NONE" ],
-        [ "Visual", jyellow, jdarkpurple, "NONE" ],
-        [ "VisualNOS", jorange, jdarkpurple, "NONE" ],
+        [ "Visual", jpurple, jdarkpurple, "NONE" ],
+        [ "VisualNOS", jpurple, jdarkpurple, "NONE" ],
         [ "Pmenu", jdarkpurple, white, "NONE" ],
         [ "PmenuSbar", jdarkpurple, white, "NONE" ],
         [ "PmenuSel", jdarkpurple, white, "NONE" ],
@@ -172,7 +171,7 @@
         [ "DiffText", jdarkpurple, white, "NONE" ],
         [ "IncSearch", jdarkpurple, white, "NONE" ],
         [ "Search", jpurple, jdarkpurple, "NONE" ],
-        [ "Directory", jdarkpurple, white, "NONE" ],
+        [ "Directory", jdarkpurple, red, "NONE" ],
         [ "MatchParen", jdarkpurple, white, "NONE" ],
         [ "SpellBad", jdarkpurple, white, "NONE", red ],
         [ "SpellCap", jdarkpurple, white, "NONE", blue ],
@@ -180,8 +179,8 @@
         [ "SpellRare", jdarkpurple, white, "NONE", cyan ],
         [ "ColorColumn", jdarkpurple, white, "NONE" ],
         [ "SignColumn", jdarkpurple, white, "NONE" ],
-        [ "ErrorMsg", red, white, "NONE" ],
-        [ "ModeMsg", jdarkpurple, white, "NONE" ],
+        [ "ErrorMsg", jdarkpurple, red, "NONE" ],
+        [ "ModeMsg", jpurple, jdarkpurple, "NONE" ],
         [ "MoreMsg", jdarkpurple, white, "NONE" ],
         [ "Question", jdarkpurple, white, "NONE" ],
         [ "WarningMsg", "Error" ],
@@ -193,8 +192,8 @@
         [ "Conceal", jdarkpurple, white, "NONE" ],
         [ "ToolbarLine", jdarkpurple, white, "NONE" ],
         [ "ToolbarButton", jdarkpurple, white, "NONE" ],
-        [ "debugPC", jdarkpurple, white, "NONE" ],
-        [ "debugBreakpoint", jdarkpurple, white, "NONE" ],
+        [ "debugPC", jdarkpurple, red, "NONE" ],
+        [ "debugBreakpoint", jdarkpurple, red, "NONE" ],
     ]
 
     # Define the color palette used by :terminal when in GUI Vim
@@ -246,7 +245,14 @@
         blue,
         magenta,
         cyan,
-        white
+        white,
+        jbrown,
+        jgreen,
+        jdarkgreen,
+        jpurple,
+        jdarkpurple,
+        jorange,
+        jyellow,
     ]
 
     # Step 5: generation
@@ -373,3 +379,4 @@ let g:terminal_ansi_colors = [
 <% end -%>
 
 " Generated with RNB (https://github.com/romainl/vim-rnb)
+
