@@ -1,2 +1,1 @@
-special-vendored-path/* linguist-vendored
-joker.erb linguist-vendored=false
+*.erb linguist-vendored
