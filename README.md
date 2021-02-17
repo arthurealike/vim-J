@@ -4,6 +4,24 @@
 
 > All it takes is a little push
 
+ ## Installation
+
+ Just copy colors/joker.vim to ~/.vim/colors or
+
+If you use any vim plugin manager:
+    
+    Plug 'arthurealike/vim-J'
+
+Once installed set the colour scheme:
+
+    colorscheme joker
+
+Enable 24-bit compatibility:
+
+    set termguicolors
+
+
+
 <details>
   <summary>Screen Shot</summary>
     
